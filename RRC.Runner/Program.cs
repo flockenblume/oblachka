@@ -8,7 +8,7 @@ CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 try
 {
     //Selevt the policy here:
-    RRC.Abstractions.IRequestPolicy requestPolicy = new TcpRequestPolicy();
+    RRC.Abstractions.IRequestPolicy requestPolicy = new KotsurTcpRequestPolicy();
 
     var options = RunnerConsole.ReadOptions(args);
     if (options is null) return 0;
